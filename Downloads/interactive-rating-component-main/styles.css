@@ -53,20 +53,23 @@ p {
 
 input {
     position: absolute;
-    width: 35px;
-    height: 35px;
     opacity: 0;
-    top: 43%;
-    left: 40%;
-    transform: translate(-50%, -50%);
 }
 
 .rating {
-    background-color:  hsl(216, 12%, 54%);
+    border:  hsl(216, 12%, 54%) 1px solid;
     border-radius: 50%;
     padding: 12px 17px;
     color: hsl(217, 12%, 63%);
 }
+
+.rating:hover,
+.rating:focus {
+    background-color: hsl(217, 12%, 63%);
+    color: white;
+    cursor: pointer;
+}
+
 
 button {
     padding: 7px 70px;
