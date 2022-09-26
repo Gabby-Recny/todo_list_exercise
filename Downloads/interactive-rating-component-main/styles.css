@@ -97,6 +97,11 @@ button:focus {
     cursor: pointer;
 }
 
+.selected + .rating {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
 .thank-you-msg {
     display: flex;
     flex-flow: column nowrap;
