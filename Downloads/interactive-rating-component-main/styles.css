@@ -70,19 +70,22 @@ input {
     cursor: pointer;
 }
 
+.btn-container {
+    display: flex;
+}
+
 
 button {
-    padding: 7px 70px;
+    padding: 13px 74px;
     text-align: center;
-    font-weight: 400;
-    padding: 12px 74px;
-    text-align: center;
-    margin: 5%;
+    margin: 5% auto;
     border-radius: 17px;
     border: none;
     background-color: hsl(25, 97%, 53%);
     color: white;
     text-transform: uppercase;
+    width: 100%;
+
 }
 
 button:hover,
@@ -92,4 +95,14 @@ button:focus {
     cursor: pointer;
 }
 
+@media (min-width: 1024px) {
+    body {
+        align-items: center;
+    }
+
+    form {
+        width: 25%;
+    }
+
+}
 
