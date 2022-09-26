@@ -10,4 +10,26 @@ body {
     justify-content: center;
 }
 
+form {
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(217, 12%, 63%);
+    margin: 25px;
+    padding: 5%;
+    border-radius: 10px;
+}
+
+h2 {
+    color: hsl(0, 0%, 100%);
+}
+
+.ratings-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.rating {
+    border: hsl(216, 12%, 54%) 2px solid;
+    background-color:  hsl(213, 19%, 18%);
+}
+
 
