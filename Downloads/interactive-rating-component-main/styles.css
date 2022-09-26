@@ -115,6 +115,18 @@ button:focus {
     width: 50%;
 }
 
+.thank-you-msg div {
+    border:  hsl(216, 12%, 54%) 1px solid;
+    padding: 2% 4%;
+    border-radius: 22px;
+    color: hsl(25, 97%, 53%);
+    margin: 15px;
+}
+
+.thank-you-msg p {
+    line-height: 1;
+}
+
 @media (min-width: 1024px) {
     body {
         align-items: center;
