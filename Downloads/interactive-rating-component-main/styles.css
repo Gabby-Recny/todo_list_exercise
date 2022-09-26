@@ -71,6 +71,7 @@ input {
 .rating:hover,
 .rating:focus {
     background-color: hsl(217, 12%, 63%);
+    color: white;
     cursor: pointer;
 }
 
