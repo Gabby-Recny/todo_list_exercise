@@ -85,4 +85,11 @@ button {
     text-transform: uppercase;
 }
 
+button:hover,
+button:focus {
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+
 
