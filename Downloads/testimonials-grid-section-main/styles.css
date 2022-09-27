@@ -23,7 +23,6 @@ figure:nth-child(4) {
     background-color: hsl(219, 29%, 14%);
 }
 
-
 figure:nth-child(odd){
     color: hsl(219, 29%, 14%);
     background-color: hsl(0, 0%, 100%);
@@ -40,8 +39,36 @@ figure:nth-child(even) {
 
 .reviewer-title {
     opacity: 0.5;
+    margin: 0;
 }
 
 .body-text {
     opacity: 0.7;
+}
+
+figure div {
+    grid-row: 1/span 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+figure div img {
+    border-radius: 50%;
+    width: 10%;
+    margin-right: 18px;
+    border: 1px hsl(0, 0%, 81%) solid;
+}
+
+figcaption {
+    display: flex;
+    flex-direction: column;
+}
+
+figure h2 {
+    grid-row: 2/span 1;
+}
+
+.body-text {
+    grid-row: 3/span 2;
 }
