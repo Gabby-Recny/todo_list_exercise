@@ -80,8 +80,15 @@ figure h2 {
 }
 
 @media (min-width: 1024px) {
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 main {
     gap: 25px;
+    margin: 85px 85px;
 }
 
 figure {
