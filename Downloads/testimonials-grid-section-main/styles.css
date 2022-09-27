@@ -1,0 +1,8 @@
+body {
+    background-color:hsl(0, 0%, 81%);
+}
+
+main {
+    display: grid;
+    margin: 30px -25px;
+}
