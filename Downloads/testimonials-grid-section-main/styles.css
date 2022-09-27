@@ -13,22 +13,35 @@ figure {
     border-radius: 7px;
     padding: 3% 7%;
     display: grid;
-    background-color: aquamarine;
-}
-
-figure:first-child {
-    background-color: hsl(263, 55%, 52%);
 }
 
 figure:nth-child(2) {
     background-color: hsl(217, 19%, 35%);
 }
 
-figure:nth-child(3),
-figure:nth-child(5) {
-    background-color: hsl(0, 0%, 100%);
-} 
-
 figure:nth-child(4) {
     background-color: hsl(219, 29%, 14%);
+}
+
+
+figure:nth-child(odd){
+    color: hsl(219, 29%, 14%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+figure:first-child {
+    background-color: hsl(263, 55%, 52%);
+}
+
+figure:first-child,
+figure:nth-child(even) {
+    color: hsl(0, 0%, 100%);
+}
+
+.reviewer-title {
+    opacity: 0.5;
+}
+
+.body-text {
+    opacity: 0.7;
 }
