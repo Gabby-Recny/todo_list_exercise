@@ -1,9 +1,34 @@
 body {
     background-color:hsl(0, 0%, 81%);
     font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
 }
 
 main {
     display: grid;
     margin: 30px -25px;
+}
+
+figure {
+    border-radius: 7px;
+    padding: 3% 7%;
+    display: grid;
+    background-color: aquamarine;
+}
+
+figure:first-child {
+    background-color: hsl(263, 55%, 52%);
+}
+
+figure:nth-child(2) {
+    background-color: hsl(217, 19%, 35%);
+}
+
+figure:nth-child(3),
+figure:nth-child(5) {
+    background-color: hsl(0, 0%, 100%);
+} 
+
+figure:nth-child(4) {
+    background-color: hsl(219, 29%, 14%);
 }
