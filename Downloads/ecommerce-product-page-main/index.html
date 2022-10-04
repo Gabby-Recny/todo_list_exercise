@@ -13,16 +13,22 @@
 </head>
 <body>
   <header>
-    <div>
-      <img src="images/logo.svg"/>
-    </div>
     <nav>
-      Collections
-      Men
-      Women
-      About
-      Contact
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+      <ul>
+        <li>Collections</li>
+        <li>Men</li>
+        <li><a>Women</a></li>
+        <li><a>About</a></li>
+        <li><a>Contact</a></li>
+      </ul>
     </nav>
+    <div>
+      <img src="images/logo.svg" class="logo"/>
+    </div>
     <section class="header-right">
       <img src="images/icon-cart.svg"/>
       <img src="images/image-avatar.png" class="avatar"/>
@@ -30,32 +36,34 @@
   </header>
   <main>
     <section class="image-wrapper">
-      <img src="images/image-product-1.jpg"/>
-      <img src="images/icon-previous.svg"/>
-      <img src="images/icon-next.svg"/> 
+      <img src="images/image-product-1.jpg" class="product-image"/>
+      <div class="arrows">
+        <img src="images/icon-previous.svg"/>
+        <img src="images/icon-next.svg"/> 
+      </div>
     </section>
-    <section>
+    <section class="product-info">
       <h5>Sneaker Company</h5>
       <h2>Fall Limited Edition Sneakers</h2>
       <p>
         These low-profile sneakers are your perfect casual wear companion. Featuring a 
         durable rubber outer sole, they’ll withstand everything the weather can offer.
       </p>
-      <h2>$125.00</h2>
-      <span>50%</span>
-      <div>
-        0
+      <div class="price-info">
+        <h2>$125.00</h2>
+        <!-- <span>50%</span> -->
+        <p>$250.00</p>
       </div>
-      <button>Add to cart</button>
+      <div class="quantity">
+        <img src="images/icon-minus.svg"/>
+        <p>0</p>
+        <img src="images/icon-plus.svg"/>
+      </div>
+      <button>
+          <img src="images/icon-cart.svg"/> 
+          Add to cart
+      </button>
     </section>
   </main>
-
-
-  $250.00
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>
