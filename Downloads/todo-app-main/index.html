@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Todo app</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img src="images/bg-mobile-light.jpg" class="banner"/>
+    <img src="images/bg-mobile-dark.jpg" class="banner hidden"/>
+    <img src="images/bg-desktop-light.jpg" class="banner hidden"/>
+    <img src="images/bg-desktop-dark.jpg" class="banner hidden"/>
+    <div class="items-container">
+      <div class="top-header">
+        <h1>ToDo</h1>
+        <img src="images/icon-moon.svg" class="theme"/>
+      </div>
+      <form>
+        <label for="newTask" class="hidden">Add New Item</label>
+        <input id="newTask" type="text"/>
+      </form>
+    </div>
+  </header>
+  <main>
+    <section class="todo-list">
+      <ul>
+          <li>
+            <input type="checkbox">
+            <label>Workout</label>
+            <button>
+              <img src="images/icon-cross.svg"
+            </button>
+          </li>
+          <li>
+            <input type="checkbox">
+            <label>Call the Doctor</label>
+            <button>
+              <img src="images/icon-cross.svg"
+            </button>
+          </li>
+          <li>
+            <input type="checkbox" checked="">
+            <label>See the Doctor</label>
+            <button>
+              <img src="images/icon-cross.svg"
+            </button>
+          </li>
+          <div class="todo-list-bottom">
+            <p>5 items left</p>
+            <p>Clear Completed</p>
+          </div>
+      </ul>
+
+    </section>
+    <section class="filter">
+      <h5>All</h5>
+      <h5>Active</h5>
+      <h5>Completed</h5>
+    </section>
+  </main>
+  <!-- 
+  Drag and drop to reorder list  -->
+  <script src="main.js"></script>
+</body>
+</html>

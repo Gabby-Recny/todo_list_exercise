@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: hsl(0, 0%, 98%);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.banner {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+}
+
+.items-container {
+    margin: 0 25px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-header img {
+    height: 30%;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: white;
+    display: inline;
+    letter-spacing: 8px;
+    font-weight: 400;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+}
+
+form input {
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 8px;
+}
+
+main {
+    margin: 0 25px;
+    color: hsl(236, 9%, 61%);
+}
+
+.filter,
+.todo-list {
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+label {
+    line-height: 2.75;
+    color: hsl(235, 19%, 35%);
+}
+
+li {
+    border-bottom: 1px solid hsl(236, 33%, 92%);
+    padding: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+button {
+    margin-left: 10px;
+    border: none;
+    background-color: white;
+    position: absolute;
+    right: 10px;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+li input {
+    width: 1.75em;
+    height: 1.75em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid hsl(0, 0%, 98%);
+    cursor: pointer;
+    margin-right: 15px;
+    /* position: absolute;
+    transform: translateY(-50%);
+    top: 50%; */
+}
+
+.todo-list-bottom {
+    padding: 5px;
+    line-height: 1.75;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter {
+    justify-content: space-evenly;
+}
+
+.filter h5:hover {
+    color: hsl(220, 98%, 61%);
+}
+
+.hidden {
+    display: none;
+}
