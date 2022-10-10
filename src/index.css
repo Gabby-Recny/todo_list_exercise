@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

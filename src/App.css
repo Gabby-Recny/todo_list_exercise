@@ -1,0 +1,43 @@
+:root {
+  --bright-blue: hsl(220, 98%, 61%);
+
+  /* Light Theme */
+  --slight-white: hsl(0, 0%, 98%);
+  --light-grey: hsl(236, 33%, 92%);
+  --light-blue: hsl(233, 11%, 84%);
+  --med-grey: hsl(236, 9%, 61%);
+  --very-dark-grey: hsl(235, 19%, 35%);
+}
+
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('./fonts/JosefinSans-VariableFont_wght.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    height: 100vh;
+}
+
+main {
+  margin: 0 25px;
+}
+
+.light {
+  background-color: var(--slight-white);
+  color: var(--very-dark-grey);
+}
+
+.dark {
+  background-color: var(--very-dark-grey);
+  color: var(--med-grey)
+}
+
+.app {
+  height: 100vh;
+}

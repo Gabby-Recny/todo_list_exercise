@@ -1,0 +1,85 @@
+li {
+    border-bottom: 1px solid var(--light-grey);
+    padding: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+button {
+    margin-left: 10px;
+    border: none;
+    background-color: var(--slight-white);
+    position: absolute;
+    right: 10px;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+button svg path {
+    fill: var(--very-dark-grey)
+}
+
+.checkbox {
+    -webkit-appearance: none;
+    position: relative;
+    width: 27px;
+    height: 27px;
+    border-radius: 48%;
+    background: var(--slight-white);
+    border: 1px solid var(--med-grey);
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.checkbox:checked {
+    background: rgb(87,221,255);
+    background: linear-gradient(94deg, rgba(87,221,255,1) 0%, rgba(192,88,243,1) 100%);
+    content: url('../images/icon-check.svg');
+}
+
+.checkbox:checked + label{
+    text-decoration: line-through;
+}
+
+.checkbox::before {
+    content: "";
+	font-size: 18px;
+	position: absolute;
+	top: 2px;
+	left: 5px;
+}
+
+/* Dark styles */
+.list-item.dark label {
+    color: var(--slight-white);
+}
+
+.list-item.dark button {
+    background-color: var(  --very-dark-grey);
+}
+
+.list-item.dark button svg path {
+    fill: var(--slight-white);
+}
+
+.list-item.dark .checkbox {
+    background-color: var(--very-dark-grey);
+}
+
+.list-item.dark .checkbox::before {
+    color: var(--very-dark-grey);
+    /* display: none; */
+}
+
+.list-item.dark .checkbox:checked {
+    display: block;
+    color: var(--slight-white);
+}
+
+.list-item.dark .checkbox:checked + label{
+    text-decoration: line-through;
+    color: var(--med-grey);
+}
+
+
