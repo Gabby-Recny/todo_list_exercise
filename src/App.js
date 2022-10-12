@@ -7,7 +7,7 @@ import { useState, useContext } from 'react';
 
 const App = () => {
   const [ toDos, setToDos ] = useState([]);
-  const [theme, setTheme] = useState('');
+  const [theme, setTheme] = useState('light');
   const value = useContext(ThemeContext);
 
   const toggleTheme = () => {
@@ -39,7 +39,7 @@ const App = () => {
         <Header toggleTheme={toggleTheme} addNewToDo={addNewToDo} />
         <main>
           <ToDos toDos={toDos} removeToDo={removeToDo} />
-          <Filters toDos={toDos}/>
+          {/* <Filters toDos={toDos}/> */}
         </main>
       </ThemeContext.Provider>
     </section>
