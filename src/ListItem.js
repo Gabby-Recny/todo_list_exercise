@@ -2,7 +2,6 @@ import './styles/ListItem.css';
 import { useState, useContext } from 'react';
 import ThemeContext from './ThemeContext';
 import { ReactComponent as DeleteBtn } from './images/icon-cross.svg';
-import { ReactComponent as Check } from './images/icon-check.svg';
 
 const ListItem = ({toDo, id, removeToDo}) => {
     const [ checked, setChecked ] = useState(false);
