@@ -13,7 +13,6 @@ const App = () => {
   const toggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light'
     setTheme(newTheme)
-    // console.log('Theme Check in App.js------>', theme)
   }
 
   const addNewToDo = (task) => {
@@ -24,7 +23,6 @@ const App = () => {
     const filteredIdeas = toDos.filter(toDo => toDo.id !== id)
     setToDos(filteredIdeas)
   }
-
 
   return (
     <section 

@@ -3,30 +3,21 @@ import './styles/Filters.css';
 import ThemeContext from './ThemeContext';
 
 
-const Filters = ({toDos}) => {
-
+const Filters = ({toDos, filterTasks}) => {
     const value = useContext(ThemeContext);
+    const [ filter, setFilter ] = useState('all');
 
-    const [ activeFilter, setActiveFilter ] = useState([]);
-    const [ completedFilter, setCompletedFilter ] = useState([]);
-
-    const handleCompletedFilters = () => {
-        const completedTasks = toDos.filter(toDo => toDo.checked === true);
-        setCompletedFilter(completedTasks)
+    const handleChange = (event) => {
+        setFilter(event.target.value)
+        filterTasks(filter)
     }
 
-    const handleActiveFilter = () => {
-        const activeTasks = toDos.filter(toDo => toDo.checked === false);
-        setActiveFilter(activeTasks)
-    }
     return (
         <section className={`filter ${value}`}>
-            {/* {console.log("Compelted Filter:", completedFilter)} */}
-            {/* {console.log("Active Filter:", activeFilter)} */}
-            <h5>All</h5>
-            <h5>Active</h5>
-            <h5>Completed</h5>
-      </section>       
+            <div><input type="radio" value="all" name="filter" onChange={(e) => handleChange(e)} /> <label htmlFor='all'>All</label></div>
+            <div><input type="radio" value="active" name="filter" onChange={(e) => handleChange(e)} /> <label htmlFor='active'>Active</label></div>
+            <div><input type="radio" value="completed" name="filter" onChange={(e) => handleChange(e)} /> <label htmlFor='completed'>Completed</label></div>
+        </section>        
     )
 }
 

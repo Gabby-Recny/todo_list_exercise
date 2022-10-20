@@ -1,16 +1,35 @@
+/* .filter.dark {
+    background-color: var(--very-dark-grey);
+} */
+
 .filter {
-    justify-content: center
+    justify-content: center;
 }
 
-.filter h5 {
+.filter div {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.filter label {
     margin-right: 15px;
     margin-left: 15px;
 }
 
-.filter h5:hover {
+.filter label:hover {
     color: var(--bright-blue);
+    cursor: pointer;
 }
 
-.filter.dark {
-    background-color: var(--very-dark-grey);
+.filter div input {
+    /* opacity: 0; */
+    position: absolute;
+    width: 27px;
+    height: 27px;
+}
+
+.filter div input:hover {
+    cursor: pointer;
 }
